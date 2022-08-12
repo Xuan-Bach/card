@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+
+:root {
+    --primary-color: #f2726a;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(45deg, #00853e, #50c878);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    background-color: #242628;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+    margin: 0 30px;
+}
+
+.card-img {
+    width: 120px;
+    height: 120px;
+    border: 3px solid var(--primary-color);
+    border-radius: 50%;
+    overflow: hidden;
+    text-align: center;
+    margin: 0 auto;
+    transform: translateY(25px);
+    cursor: pointer;
+}
+
+.card-img:hover{
+    width: 100%;
+    height: 100%;
+    border-radius: unset;
+    border: unset;
+    transform: unset;
+    transition: 0.25s;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card h2 {
+    color: white;
+    margin-top: 35px;
+}
+
+.card h2:hover {
+    color: aqua;
+}
+
+.card p {
+    color: var(--primary-color);
+}
+
+.card .social {
+    margin: 20px 0px;
+}
+
+.card .social a {
+    margin: 25px 20px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    display: inline;
+    transition: 0.25s;
+}
+
+/* .card .social a:hover {
+    background: var(--primary-color);
+} */
+
+.card button {
+    width: 140px;
+    height: 50px;
+    border: 2px solid var(--primary-color);
+    background: transparent;
+    border-radius: 10px;
+    color: white;
+    transition: 0.5s;
+}
+
+.card button:hover {
+    background: var(--primary-color);
+}
+
